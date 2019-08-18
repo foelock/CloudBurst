@@ -3,10 +3,9 @@ package com.github.foelock.cloudburst
 import java.nio.charset.StandardCharsets
 import java.nio.file.{Files, Paths}
 
-import com.github.foelock.cloudburst.domain.Track
 import com.github.foelock.cloudburst.util.JsonUtil
-import io.circe.{Decoder, Encoder}
 import io.circe.derivation.{deriveDecoder, deriveEncoder}
+import io.circe.{Decoder, Encoder}
 
 case class ProgramLocalStorage(
   clientId: Option[String],
@@ -25,10 +24,9 @@ class ProgramLocalStorageService(userDir: String) {
     if (!Files.exists(path)) {
       Files.createDirectories(path.getParent)
       Files.createFile(path)
-      path
-    } else {
-      path
     }
+
+    path
   }
 
   private var _current = {
