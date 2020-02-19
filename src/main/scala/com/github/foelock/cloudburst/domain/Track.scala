@@ -3,74 +3,67 @@ package com.github.foelock.cloudburst.domain
 import io.circe.derivation.{deriveDecoder, deriveEncoder}
 import io.circe.{Decoder, Encoder}
 
-case class MiniUser(
-  id: Int,
-  kind: String,
-  username: String,
-  permalink: String,
-  last_modified: String,
-  uri: String,
-  permalink_url: String,
-  avatar_url: String
+case class Format(
+  protocol: String,
+  mime_type: String
+) {
+  val fileExt = mime_type match {
+    case Format.OPUS => "opus"
+    case Format.MP3 => "mp3"
+    case x => throw new RuntimeException(s"unknown format: $x")
+  }
+}
+
+object Format {
+  val OPUS = "audio/ogg; codecs=\"opus\""
+  val MP3 = "audio/mpeg"
+  implicit val encoder: Encoder[Format] = deriveEncoder
+  implicit val decoder: Decoder[Format] = deriveDecoder
+}
+
+case class Transcoding(
+  url: String,
+  preset: String,
+  duration: Long,
+  snipped: Boolean,
+  format: Format,
+  quality: String
 )
 
-object MiniUser {
-  implicit val encoder: Encoder[MiniUser] = deriveEncoder
-  implicit val decoder: Decoder[MiniUser] = deriveDecoder
+object Transcoding {
+
+
+  implicit val encoder: Encoder[Transcoding] = deriveEncoder
+  implicit val decoder: Decoder[Transcoding] = deriveDecoder
+}
+
+case class Media(
+  transcodings: Seq[Transcoding]
+) {
+  def getTranscoding: Option[Transcoding] = {
+    val hlsTranscodings = transcodings.filter(_.format.protocol == "progressive")
+    hlsTranscodings.find(_.format.mime_type == Format.OPUS).orElse(hlsTranscodings.find(_.format.mime_type == Format.MP3))
+  }
+}
+
+object Media {
+  implicit val encoder: Encoder[Media] = deriveEncoder
+  implicit val decoder: Decoder[Media] = deriveDecoder
 }
 
 case class Track(
-  id: Long,
-  created_at: String, // "2009/08/13 18:30:10 +0000"
-  user_id: Long,
-  user: MiniUser,
-  title: String,
-  permalink: String,
-  permalink_url: String,
-  uri: String,
-  sharing: String,
-  embeddable_by: String,
-  purchase_url: Option[String],
-  purchase_title: Option[String],
-  artwork_url: String,
-  description: String,
-  label: Option[MiniUser],
-  duration: Long,
-  genre: String,
-  tag_list: String,
-  label_id: Option[Long],
-  label_name: Option[String],
-  release: Option[Long],
-  release_day: Option[Int],
-  release_month: Option[Int],
-  release_year: Option[Int],
-  streamable: Boolean,
-  downloadable: Boolean,
-  state: String,
-  license: String,
-  track_type: Option[String],
-  waveform_url: String,
-  download_url: String,
-  stream_url: String,
-  video_url: Option[String],
-  bpm: Option[Int],
-  commentable: Boolean,
-  isrc: Option[String],
-  key_signature: Option[String],
-  comment_count: Long,
-  download_count: Long,
-  playback_count: Long,
-  favoritings_count: Long,
-  original_format: String,
-  original_content_size: Long,
-  user_favorite: Option[Boolean],
-  reposts_count: Long,
-  policy: String,
-  attachments_uri: String,
-  monetization_model: String
+  media: Media,
+  title: String
 )
 
 object Track {
   implicit val encoder: Encoder[Track] = deriveEncoder
   implicit val decoder: Decoder[Track] = deriveDecoder
+}
+
+case class DownloadUrl(url: String)
+
+object DownloadUrl {
+  implicit val encoder: Encoder[DownloadUrl] = deriveEncoder
+  implicit val decoder: Decoder[DownloadUrl] = deriveDecoder
 }

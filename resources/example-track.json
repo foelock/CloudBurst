@@ -1,0 +1,136 @@
+{
+  "comment_count": 19,
+  "full_duration": 308821,
+  "downloadable": true,
+  "created_at": "2018-11-06T15:53:08Z",
+  "description": "really debated uploading this in february but thought it was stupid to wait four months to post a song",
+  "media": {
+    "transcodings": [
+      {
+        "url": "https://api-v2.soundcloud.com/media/soundcloud:tracks:525671871/3158f155-f61b-4a46-ba4a-7a87899c39fe/stream/hls",
+        "preset": "mp3_standard",
+        "duration": 308821,
+        "snipped": false,
+        "format": {
+          "protocol": "hls",
+          "mime_type": "audio/mpeg"
+        },
+        "quality": "sq"
+      },
+      {
+        "url": "https://api-v2.soundcloud.com/media/soundcloud:tracks:525671871/3158f155-f61b-4a46-ba4a-7a87899c39fe/stream/progressive",
+        "preset": "mp3_standard",
+        "duration": 308821,
+        "snipped": false,
+        "format": {
+          "protocol": "progressive",
+          "mime_type": "audio/mpeg"
+        },
+        "quality": "sq"
+      },
+      {
+        "url": "https://api-v2.soundcloud.com/media/soundcloud:tracks:525671871/0a0cb1da-f3de-46d6-b9c1-c250c9792185/stream/hls",
+        "preset": "opus_0_0",
+        "duration": 308821,
+        "snipped": false,
+        "format": {
+          "protocol": "hls",
+          "mime_type": "audio/ogg; codecs=\"opus\""
+        },
+        "quality": "sq"
+      }
+    ]
+  },
+  "title": "Cupid Groove",
+  "publisher_metadata": {
+    "urn": "soundcloud:tracks:525671871",
+    "contains_music": true,
+    "id": 525671871
+  },
+  "duration": 308821,
+  "has_downloads_left": false,
+  "artwork_url": "https://i1.sndcdn.com/artworks-000434824701-pz345l-large.jpg",
+  "public": true,
+  "streamable": true,
+  "tag_list": "",
+  "download_url": "https://api.soundcloud.com/tracks/525671871/download",
+  "genre": "Anime Groove",
+  "id": 525671871,
+  "reposts_count": 64,
+  "state": "finished",
+  "label_name": null,
+  "last_modified": "2019-04-26T07:01:23Z",
+  "commentable": true,
+  "policy": "MONETIZE",
+  "visuals": null,
+  "kind": "track",
+  "purchase_url": null,
+  "sharing": "public",
+  "uri": "https://api.soundcloud.com/tracks/525671871",
+  "secret_token": null,
+  "download_count": 100,
+  "likes_count": 747,
+  "urn": "soundcloud:tracks:525671871",
+  "license": "all-rights-reserved",
+  "purchase_title": null,
+  "display_date": "2018-11-06T15:53:08Z",
+  "embeddable_by": "all",
+  "release_date": null,
+  "user_id": 22946428,
+  "monetization_model": "BLACKBOX",
+  "waveform_url": "https://wave.sndcdn.com/rUXWsXaJleQA_m.json",
+  "permalink": "cupid-groove",
+  "permalink_url": "https://soundcloud.com/plexitofer/cupid-groove",
+  "user": {
+    "avatar_url": "https://i1.sndcdn.com/avatars-000600290430-r9nguj-large.jpg",
+    "city": "",
+    "comments_count": 139,
+    "country_code": "US",
+    "created_at": "2012-08-27T08:35:21Z",
+    "creator_subscriptions": [
+      {
+        "product": {
+          "id": "free"
+        }
+      }
+    ],
+    "creator_subscription": {
+      "product": {
+        "id": "free"
+      }
+    },
+    "description": "its like future funk or french house... but with anime music #animegroove",
+    "followers_count": 6721,
+    "followings_count": 105,
+    "first_name": "Chris",
+    "full_name": "Chris G.",
+    "groups_count": 0,
+    "id": 22946428,
+    "kind": "user",
+    "last_modified": "2020-01-31T05:59:32Z",
+    "last_name": "G.",
+    "likes_count": 358,
+    "playlist_likes_count": 22,
+    "permalink": "plexitofer",
+    "permalink_url": "https://soundcloud.com/plexitofer",
+    "playlist_count": 3,
+    "reposts_count": null,
+    "track_count": 43,
+    "uri": "https://api.soundcloud.com/users/22946428",
+    "urn": "soundcloud:users:22946428",
+    "username": "Plexi.",
+    "verified": false,
+    "visuals": {
+      "urn": "soundcloud:users:22946428",
+      "enabled": true,
+      "visuals": [
+        {
+          "urn": "soundcloud:visuals:64871560",
+          "entry_time": 0,
+          "visual_url": "https://i1.sndcdn.com/visuals-000022946428-MyTLYV-original.jpg"
+        }
+      ]
+    }
+  },
+  "playback_count": 27805
+}

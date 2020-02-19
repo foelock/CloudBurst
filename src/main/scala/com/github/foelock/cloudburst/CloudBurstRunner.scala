@@ -11,7 +11,8 @@ object CloudBurstRunner extends App {
   val apiClient = wiring.scApiClient
 
 //  val result = apiClient.getTrackById()
-  val result = apiClient.getTrackByUrl("https://soundcloud.com/plexitofer/cupid-groove")
+//  val result = apiClient.getTrackByUrl("https://soundcloud.com/plexitofer/cupid-groove")
+  val result = apiClient.getTrackByUrl("https://soundcloud.com/topazeclub/city-night-shadows")
 
 //  println(JsonUtil.toJson(result, true))
 

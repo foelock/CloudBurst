@@ -1,9 +1,8 @@
-package com.github.foelock.cloudburst
+package com.github.foelock.cloudburst.util
 
 import java.nio.charset.StandardCharsets
 import java.nio.file.{Files, Paths}
 
-import com.github.foelock.cloudburst.util.JsonUtil
 import io.circe.derivation.{deriveDecoder, deriveEncoder}
 import io.circe.{Decoder, Encoder}
 
