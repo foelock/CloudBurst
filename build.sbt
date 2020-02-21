@@ -4,7 +4,7 @@ ThisBuild / version := "1.0-SNAPSHOT"
 ThisBuild / name := "cloudburst"
 
 
-libraryDependencies += "com.softwaremill.sttp.client" %% "core" % "2.0.0-RC11"
+libraryDependencies +=  "org.scalaj" %% "scalaj-http" % "2.4.2"
 
 libraryDependencies ++= Seq(
   "io.circe" %% "circe-core",

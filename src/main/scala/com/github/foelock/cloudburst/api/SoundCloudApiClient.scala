@@ -1,27 +1,22 @@
 package com.github.foelock.cloudburst.api
 
 import java.io.{FileOutputStream, InputStream}
-import java.net.{URL, URLEncoder}
+import java.net.URL
 import java.nio.channels.{Channels, ReadableByteChannel}
 import java.nio.file.{FileAlreadyExistsException, Files, Paths}
 
-import cats.Id
 import com.github.foelock.cloudburst.api.SoundCloudConstants._
 import com.github.foelock.cloudburst.domain.{DownloadUrl, Track, Transcoding, User}
 import com.github.foelock.cloudburst.util.{JsonUtil, ProgramLocalStorageService}
-import sttp.client._
 import io.circe.Decoder
-import sttp.model.{StatusCode, Uri}
 
 import scala.util.matching.Regex
+import scalaj.http._
 
 class SoundCloudApiClient(
   programLocalStorageService: ProgramLocalStorageService,
   baseDownloadPath: String,
   clientIdOverride: Option[String] = None) {
-
-  //  private implicit val backend: SttpBackend[Id, Nothing] = HttpURLConnectionBackend()
-  private implicit val backend = HttpURLConnectionBackend()
 
   private lazy val clientId = clientIdOverride.orElse(instantiateClientId).getOrElse(FALLBACK_CLIENT_ID)
 
@@ -33,24 +28,15 @@ class SoundCloudApiClient(
     path
   }
 
-  private type ResponseType = Identity[Response[Either[String, String]]]
-
-  private def extractBodyRaw(response: ResponseType): String = {
-    response.body match {
-      case Left(value) => throw new RuntimeException(s"Error parsing body: ${value}")
-      case Right(value) => value
-    }
-  }
-
   private def fetchNewClientId(): Option[String] = {
-    val request = basicRequest.get(uri"https://soundcloud.com/")
-    val response: Identity[Response[Either[String, String]]] = request.send()
+    val request = Http(s"https://soundcloud.com/")
+    val response = request.asString
 
-    val jsBundleUrls = JsBundleRegex.findAllIn(extractBodyRaw(response))
+    val jsBundleUrls = JsBundleRegex.findAllIn(response.body)
 
     jsBundleUrls.map { jsBundleUrl =>
-      println(s"checking ${jsBundleUrl}...")
-      val jsBundle = extractBodyRaw(basicRequest.get(uri"$jsBundleUrl").send())
+      println(s"checking $jsBundleUrl...")
+      val jsBundle = Http(jsBundleUrl).asString.body
       val maybeClientId = ClientIdRegex.findFirstMatchIn(jsBundle).map(_.group(1))
       if (maybeClientId.isDefined) {
         println(s"found a client id! ${maybeClientId.get}")
@@ -64,20 +50,22 @@ class SoundCloudApiClient(
   }
 
   private val baseUrl = "https://api-v2.soundcloud.com"
+  private val oldBaseUrl = "https://api.soundcloud.com"
 
-  private def apiUrlFor(resource: String, resourceId: Option[String] = None, queryParams: Map[String, String] = Map()): Uri = {
+  private def apiRequestFor(resource: String, resourceId: Option[String] = None, queryParams: Map[String, String] = Map()): HttpRequest = {
     val maybeResourceId = resourceId.map(rid => s"/$rid").getOrElse("")
     val path = s"$resource$maybeResourceId"
-    val uri = uri"$baseUrl/$path?$queryParams&client_id=$clientId"
-    uri
+    val request = Http(s"$baseUrl/$path?client_id=$clientId").params(queryParams)
+    println(request.url)
+    request
   }
 
   private def instantiateClientId: Option[String] = {
     val localClientId = programLocalStorageService.current.clientId
     val localClientIdWorks = localClientId.exists { cid =>
-      val request = basicRequest.get(uri"https://api.soundcloud.com/tracks?client_id=$cid") // doesn't use apiUrlFor because instantiation reasons
-      val response = request.send()
-      response.code == StatusCode.Ok
+      val request = Http(s"$oldBaseUrl/tracks?client_id=$cid") // doesn't use apiUrlFor because instantiation reasons
+      val response = request.asString
+      response.code == 200
     }
 
     if (localClientIdWorks) {
@@ -90,23 +78,23 @@ class SoundCloudApiClient(
   }
 
   def getTrackById(id: Long = 525671871): Option[Track] = {
-    val request = basicRequest.get(apiUrlFor("tracks", Some(id.toString)))
-    val response = request.send()
+    val request = apiRequestFor("tracks", Some(id.toString))
+    val response = request.asString
     parseResponse[Track](response)
   }
 
   def getTrackByUrl(url: String): Option[Track] = {
-    val request = basicRequest.get(apiUrlFor(resource = "resolve", queryParams = Map("url" -> url)))
-    val response = request.send()
+    val request = apiRequestFor(resource = "resolve", queryParams = Map("url" -> url))
+    val response = request.asString
     parseResponse[Track](response)
   }
 
   def getUserById(id: Long): Option[User] = {
-    val request = basicRequest.get(apiUrlFor("users", Some(id.toString)))
+    val request = apiRequestFor("users", Some(id.toString))
 
-    val response = request.send()
+    val response = request.asString
 
-    println(extractBodyRaw(response))
+    println(response.body)
     None
   }
 
@@ -115,7 +103,7 @@ class SoundCloudApiClient(
     for {
       transcoding <- track.media.getTranscoding
       downloadUrl <- {
-        val transcodeResponse = basicRequest.get(uri"${transcoding.url}?client_id=$clientId").send()
+        val transcodeResponse = Http(s"${transcoding.url}?client_id=$clientId").asString
         parseResponse[DownloadUrl](transcodeResponse)
       }
     } yield {
@@ -132,7 +120,7 @@ class SoundCloudApiClient(
     try {
       dlStream = Some(new URL(url).openStream())
       rbc = Some(Channels.newChannel(dlStream.get))
-      val dlFile = Files.createFile(Paths.get(downloadPath.toString, s"${track.title}.${fileExt}")).toFile
+      val dlFile = Files.createFile(Paths.get(downloadPath.toString, s"${track.title}.$fileExt")).toFile
       println(s"downloading to ${dlFile.getAbsolutePath}")
       fos = Some(new FileOutputStream(dlFile))
       fos.get.getChannel.transferFrom(rbc.get, 0, Long.MaxValue)
@@ -141,7 +129,7 @@ class SoundCloudApiClient(
       case _: FileAlreadyExistsException =>
         println("file already exists. skipping")
       case exception: Exception =>
-        println(s"error downloading ${track.title}: ${exception}")
+        println(s"error downloading ${track.title}: $exception")
     } finally {
       fos.foreach(_.close())
       rbc.foreach(_.close())
@@ -149,13 +137,13 @@ class SoundCloudApiClient(
     }
   }
 
-  private def parseResponse[T](response: ResponseType)(implicit decoder: Decoder[T]): Option[T] = {
-    response.body match {
-      case Left(error) =>
-        println(error)
+  private def parseResponse[T](response: HttpResponse[String])(implicit decoder: Decoder[T]): Option[T] = {
+    try {
+      Some(JsonUtil.fromJson[T](response.body))
+    } catch {
+      case e: Exception =>
+        println(s"error parsing: ${response.body}", e)
         None
-      case Right(json) =>
-        Some(JsonUtil.fromJson[T](json))
     }
   }
 }

@@ -12,11 +12,14 @@ object CloudBurstRunner extends App {
 
 //  val result = apiClient.getTrackById()
 //  val result = apiClient.getTrackByUrl("https://soundcloud.com/plexitofer/cupid-groove")
-  val result = apiClient.getTrackByUrl("https://soundcloud.com/topazeclub/city-night-shadows")
+//  val result = apiClient.getTrackByUrl("https://soundcloud.com/topazeclub/city-night-shadows")
+//  apiClient.downloadTrack(result.get)
+
+  val userResult = apiClient.getUserById(269568808)
 
 //  println(JsonUtil.toJson(result, true))
 
-  apiClient.downloadTrack(result.get)
+
   wiring.programLocalStorageService.shutdown()
 
   System.exit(0)
