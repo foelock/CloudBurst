@@ -1,0 +1,1068 @@
+{
+  "collection": [
+    {
+      "kind": "like",
+      "created_at": "2020-02-17T23:14:49Z",
+      "track": {
+        "comment_count": 27,
+        "full_duration": 269295,
+        "downloadable": false,
+        "created_at": "2018-09-25T06:03:23Z",
+        "description": "stay til the end for a   g u i t a r  s o l o   and  p o r t e r    r o b i n s o n  s a m p l e\nlil something 4 u since i'm garbage at consistent uploading. I worked super duper obsessively hard on this one, hope you all enjoy listening to it :)\n\nI'm a lazy piece of shit and never upload anything I'm working on (my messages are full of people saying like \"do you still make music??\" haha) because I'm afraid it isn't good enough or no one will like it but after counsel with some good friends, it's probably healthier and better for everyone to just release it and not worry or compare too much. i definitely obsess over little tiny details wayyyyyy too hard and songs keep getting stuck in the depths of my hard drive so from here on I'm going to upload more consistently! \n\nI didn't quite \"perfect\" this one but hope everyone can still enjoy. Love you guys! <3",
+        "media": {
+          "transcodings": [
+            {
+              "url": "https://api-v2.soundcloud.com/media/soundcloud:tracks:504835032/75427fa8-139d-492a-97d2-e4b75771b378/stream/hls",
+              "preset": "mp3_standard",
+              "duration": 269295,
+              "snipped": false,
+              "format": {
+                "protocol": "hls",
+                "mime_type": "audio/mpeg"
+              },
+              "quality": "sq"
+            },
+            {
+              "url": "https://api-v2.soundcloud.com/media/soundcloud:tracks:504835032/75427fa8-139d-492a-97d2-e4b75771b378/stream/progressive",
+              "preset": "mp3_standard",
+              "duration": 269295,
+              "snipped": false,
+              "format": {
+                "protocol": "progressive",
+                "mime_type": "audio/mpeg"
+              },
+              "quality": "sq"
+            },
+            {
+              "url": "https://api-v2.soundcloud.com/media/soundcloud:tracks:504835032/8ceae8b5-1d8d-4d65-beb2-bde6322bbdfd/stream/hls",
+              "preset": "opus_0_0",
+              "duration": 269295,
+              "snipped": false,
+              "format": {
+                "protocol": "hls",
+                "mime_type": "audio/ogg; codecs=\"opus\""
+              },
+              "quality": "sq"
+            }
+          ]
+        },
+        "title": "Darling [THANK YOU SO MUCH FOR 7K!!!]",
+        "publisher_metadata": {
+          "urn": "soundcloud:tracks:504835032",
+          "id": 504835032
+        },
+        "duration": 269295,
+        "has_downloads_left": true,
+        "artwork_url": "https://i1.sndcdn.com/artworks-000410601141-970t7r-large.jpg",
+        "public": true,
+        "streamable": true,
+        "tag_list": "Future Funk Vaporwave \"Nu Disco\" \"French House\" \"French Touch\" Japanese Disco Tokyo Japan Boogie Mix Electro Otaku \"Anime Groove\" DJ \"City Pop\" Franxx \"Zero Two\" 02 Adrian Wave Adrianwave \"night tempo\" Livetune+ Aesthetic",
+        "download_url": null,
+        "genre": "future funk",
+        "id": 504835032,
+        "reposts_count": 73,
+        "state": "finished",
+        "label_name": null,
+        "last_modified": "2020-02-02T02:16:19Z",
+        "commentable": true,
+        "policy": "MONETIZE",
+        "visuals": null,
+        "kind": "track",
+        "purchase_url": "https://adrianwave.bandcamp.com/track/darling",
+        "sharing": "public",
+        "uri": "https://api.soundcloud.com/tracks/504835032",
+        "secret_token": null,
+        "download_count": 0,
+        "likes_count": 867,
+        "urn": "soundcloud:tracks:504835032",
+        "license": "cc-by-nc-sa",
+        "purchase_title": "download this bitch",
+        "display_date": "2018-09-25T06:03:23Z",
+        "embeddable_by": "all",
+        "release_date": null,
+        "user_id": 38130657,
+        "monetization_model": "BLACKBOX",
+        "waveform_url": "https://wave.sndcdn.com/leQuHr9gQ685_m.json",
+        "permalink": "darling",
+        "permalink_url": "https://soundcloud.com/adrianwave/darling",
+        "user": {
+          "avatar_url": "https://i1.sndcdn.com/avatars-000732922738-7v4sol-large.jpg",
+          "first_name": "",
+          "full_name": "",
+          "id": 38130657,
+          "kind": "user",
+          "last_modified": "2019-12-02T06:56:33Z",
+          "last_name": "",
+          "permalink": "adrianwave",
+          "permalink_url": "https://soundcloud.com/adrianwave",
+          "uri": "https://api.soundcloud.com/users/38130657",
+          "urn": "soundcloud:users:38130657",
+          "username": "ΛDRIΛNWΛVE",
+          "verified": false,
+          "city": "Boise",
+          "country_code": "US"
+        },
+        "playback_count": 30586
+      }
+    },
+    {
+      "kind": "like",
+      "created_at": "2020-02-17T18:26:29Z",
+      "track": {
+        "comment_count": 43,
+        "full_duration": 156566,
+        "downloadable": false,
+        "created_at": "2017-12-08T00:01:23Z",
+        "description": "Love down the city lights <3\nMuch Love\nAndroid-chan\nGraphic by:\nwww.facebook.com/daviouxx/\n悲しい ANDROID - APARTMENT¶:\nSoundcloud: @android-apartment\nFacebook: www.facebook.com/AndroidApartment\nBandcamp: android-apartment.bandcamp.com\nTwitter: twitter.com/SadAndroid_chan\nYoutube: www.youtube.com/channel/UCNqpthUUr1TMBeTuxTQFqbg\nSnapchat: androidchan\n\n<a href='https://theartistunion.com/tracks/0d2099'>Download for free on The Artist Union</a>",
+        "media": {
+          "transcodings": [
+            {
+              "url": "https://api-v2.soundcloud.com/media/soundcloud:tracks:366488855/6a9a182c-46c0-42d9-8c75-e1b2216f00d6/stream/hls",
+              "preset": "mp3_0_0",
+              "duration": 156566,
+              "snipped": false,
+              "format": {
+                "protocol": "hls",
+                "mime_type": "audio/mpeg"
+              },
+              "quality": "sq"
+            },
+            {
+              "url": "https://api-v2.soundcloud.com/media/soundcloud:tracks:366488855/6a9a182c-46c0-42d9-8c75-e1b2216f00d6/stream/progressive",
+              "preset": "mp3_0_0",
+              "duration": 156566,
+              "snipped": false,
+              "format": {
+                "protocol": "progressive",
+                "mime_type": "audio/mpeg"
+              },
+              "quality": "sq"
+            },
+            {
+              "url": "https://api-v2.soundcloud.com/media/soundcloud:tracks:366488855/21f6b109-fe42-4807-9836-30eb6fd61306/stream/hls",
+              "preset": "opus_0_0",
+              "duration": 156566,
+              "snipped": false,
+              "format": {
+                "protocol": "hls",
+                "mime_type": "audio/ogg; codecs=\"opus\""
+              },
+              "quality": "sq"
+            }
+          ]
+        },
+        "title": "Love Stories And Skyscrapers",
+        "publisher_metadata": {
+          "urn": "soundcloud:tracks:366488855",
+          "contains_music": true,
+          "artist": "",
+          "writer_composer": "",
+          "id": 366488855
+        },
+        "duration": 156566,
+        "has_downloads_left": true,
+        "artwork_url": "https://i1.sndcdn.com/artworks-000266509991-lse3c3-large.jpg",
+        "public": true,
+        "streamable": true,
+        "tag_list": "Japanese disco future funk futurefunk vaporwave Disco Japan internet aesthetic Animebae Night vibes Funky plunderphonics 80 s Remix Dance CityPop Edit nostalgia Hot android-apartment filterhouse boogie Pop/Funk Sample dj retro",
+        "download_url": null,
+        "genre": "FutureFunk",
+        "id": 366488855,
+        "reposts_count": 442,
+        "state": "finished",
+        "label_name": null,
+        "last_modified": "2019-10-27T15:54:08Z",
+        "commentable": true,
+        "policy": "ALLOW",
+        "visuals": null,
+        "kind": "track",
+        "purchase_url": "https://theartistunion.com/tracks/0d2099",
+        "sharing": "public",
+        "uri": "https://api.soundcloud.com/tracks/366488855",
+        "secret_token": null,
+        "download_count": 0,
+        "likes_count": 2421,
+        "urn": "soundcloud:tracks:366488855",
+        "license": "cc-by-nc-sa",
+        "purchase_title": "Free Download",
+        "display_date": "2017-12-08T00:01:23Z",
+        "embeddable_by": "all",
+        "release_date": null,
+        "user_id": 134278451,
+        "monetization_model": "NOT_APPLICABLE",
+        "waveform_url": "https://wave.sndcdn.com/UTuJh7JvnuFR_m.json",
+        "permalink": "love-stories-and-skyscrapers",
+        "permalink_url": "https://soundcloud.com/android-apartment/love-stories-and-skyscrapers",
+        "user": {
+          "avatar_url": "https://i1.sndcdn.com/avatars-000585407130-txup7l-large.jpg",
+          "first_name": "Alberto",
+          "full_name": "Alberto Rojch",
+          "id": 134278451,
+          "kind": "user",
+          "last_modified": "2019-12-08T02:05:59Z",
+          "last_name": "Rojch",
+          "permalink": "android-apartment",
+          "permalink_url": "https://soundcloud.com/android-apartment",
+          "uri": "https://api.soundcloud.com/users/134278451",
+          "urn": "soundcloud:users:134278451",
+          "username": "Android Apartment",
+          "verified": false,
+          "city": "Italian based in London",
+          "country_code": null
+        },
+        "playback_count": 97659
+      }
+    },
+    {
+      "kind": "like",
+      "created_at": "2020-02-14T00:57:16Z",
+      "track": {
+        "comment_count": 39,
+        "full_duration": 185878,
+        "downloadable": false,
+        "created_at": "2017-03-13T10:51:42Z",
+        "description": "",
+        "media": {
+          "transcodings": [
+            {
+              "url": "https://api-v2.soundcloud.com/media/soundcloud:tracks:312126469/39cef06e-0c0a-4f90-99da-737595875313/stream/hls",
+              "preset": "mp3_0_0",
+              "duration": 185878,
+              "snipped": false,
+              "format": {
+                "protocol": "hls",
+                "mime_type": "audio/mpeg"
+              },
+              "quality": "sq"
+            },
+            {
+              "url": "https://api-v2.soundcloud.com/media/soundcloud:tracks:312126469/39cef06e-0c0a-4f90-99da-737595875313/stream/progressive",
+              "preset": "mp3_0_0",
+              "duration": 185878,
+              "snipped": false,
+              "format": {
+                "protocol": "progressive",
+                "mime_type": "audio/mpeg"
+              },
+              "quality": "sq"
+            }
+          ]
+        },
+        "title": "偽り深層INSIDE",
+        "publisher_metadata": {
+          "urn": "soundcloud:tracks:312126469",
+          "contains_music": true,
+          "artist": "\\u30DF\\u30AB\\u30C5\\u30ADBIGWAVE",
+          "writer_composer": "\\u30DF\\u30AB\\u30C5\\u30ADBIGWAVE",
+          "publisher": "ミカヅキBIGWAVE",
+          "isrc": "QM42K1870561",
+          "id": 312126469,
+          "album_title": "偽り深層INSIDE",
+          "release_title": "偽り深層INSIDE"
+        },
+        "duration": 185878,
+        "has_downloads_left": true,
+        "artwork_url": "https://i1.sndcdn.com/artworks-000502057773-ayhk0g-large.jpg",
+        "public": true,
+        "streamable": true,
+        "tag_list": "Japanese Disco French House Future Funk Vapor Wave anime groove nudisco jpop City pop 80s dance ミカヅキ BIGWAVE Retro otaku ミカヅキBIGWAVE 偽り深層INSIDE 偽り 深層 inside ranma",
+        "download_url": null,
+        "genre": "Future Funk",
+        "id": 312126469,
+        "reposts_count": 410,
+        "state": "finished",
+        "label_name": null,
+        "last_modified": "2019-03-11T04:13:32Z",
+        "commentable": true,
+        "policy": "MONETIZE",
+        "visuals": null,
+        "kind": "track",
+        "purchase_url": "https://mikazukibigwave.bandcamp.com/album/sc-singles-vol-2",
+        "sharing": "public",
+        "uri": "https://api.soundcloud.com/tracks/312126469",
+        "secret_token": null,
+        "download_count": 0,
+        "likes_count": 2529,
+        "urn": "soundcloud:tracks:312126469",
+        "license": "all-rights-reserved",
+        "purchase_title": "Download",
+        "display_date": "2017-03-13T10:51:42Z",
+        "embeddable_by": "all",
+        "release_date": "2017-03-13T00:00:00Z",
+        "user_id": 85780536,
+        "monetization_model": "AD_SUPPORTED",
+        "waveform_url": "https://wave.sndcdn.com/24Hq5U9G3rYb_m.json",
+        "permalink": "itsuwarishinsoinside",
+        "permalink_url": "https://soundcloud.com/mikazukibigwave/itsuwarishinsoinside",
+        "user": {
+          "avatar_url": "https://i1.sndcdn.com/avatars-ZBZaCI6hyRUMvPdY-UEzceg-large.jpg",
+          "first_name": "mikazukibigwave",
+          "full_name": "mikazukibigwave",
+          "id": 85780536,
+          "kind": "user",
+          "last_modified": "2020-02-19T13:21:25Z",
+          "last_name": "",
+          "permalink": "mikazukibigwave",
+          "permalink_url": "https://soundcloud.com/mikazukibigwave",
+          "uri": "https://api.soundcloud.com/users/85780536",
+          "urn": "soundcloud:users:85780536",
+          "username": "ミカヅキBIGWAVE",
+          "verified": false,
+          "city": "Yokohama",
+          "country_code": "JP"
+        },
+        "playback_count": 122054
+      }
+    },
+    {
+      "kind": "like",
+      "created_at": "2020-02-07T23:43:22Z",
+      "track": {
+        "comment_count": 11,
+        "full_duration": 217932,
+        "downloadable": true,
+        "created_at": "2017-09-28T20:34:42Z",
+        "description": "Fiesta!!!\nSergio y Estibaliz - Cantinero de cuba\namazons 嘘泣きでCHEEK",
+        "media": {
+          "transcodings": [
+            {
+              "url": "https://api-v2.soundcloud.com/media/soundcloud:tracks:344476016/0531353f-4155-4b7d-9a91-1f15c462c771/stream/hls",
+              "preset": "mp3_0_0",
+              "duration": 217932,
+              "snipped": false,
+              "format": {
+                "protocol": "hls",
+                "mime_type": "audio/mpeg"
+              },
+              "quality": "sq"
+            },
+            {
+              "url": "https://api-v2.soundcloud.com/media/soundcloud:tracks:344476016/0531353f-4155-4b7d-9a91-1f15c462c771/stream/progressive",
+              "preset": "mp3_0_0",
+              "duration": 217932,
+              "snipped": false,
+              "format": {
+                "protocol": "progressive",
+                "mime_type": "audio/mpeg"
+              },
+              "quality": "sq"
+            },
+            {
+              "url": "https://api-v2.soundcloud.com/media/soundcloud:tracks:344476016/ae2f9102-adff-4c9b-a67b-71bf17a7bfe3/stream/hls",
+              "preset": "opus_0_0",
+              "duration": 217932,
+              "snipped": false,
+              "format": {
+                "protocol": "hls",
+                "mime_type": "audio/ogg; codecs=\"opus\""
+              },
+              "quality": "sq"
+            }
+          ]
+        },
+        "title": "Some Like It Hot",
+        "publisher_metadata": {
+          "urn": "soundcloud:tracks:344476016",
+          "id": 344476016
+        },
+        "duration": 217932,
+        "has_downloads_left": false,
+        "artwork_url": "https://i1.sndcdn.com/artworks-000244748920-1g2ymr-large.jpg",
+        "public": true,
+        "streamable": true,
+        "tag_list": "\"Latin future funk\" Latin \"some like it hot\" kawaii 80 s \"Japanese \" \"future funk\" \"city pop\" City Night fiesta",
+        "download_url": "https://api.soundcloud.com/tracks/344476016/download",
+        "genre": "Latin Future Funk",
+        "id": 344476016,
+        "reposts_count": 63,
+        "state": "finished",
+        "label_name": null,
+        "last_modified": "2020-02-11T00:32:49Z",
+        "commentable": true,
+        "policy": "MONETIZE",
+        "visuals": null,
+        "kind": "track",
+        "purchase_url": "https://theartistunion.com/tracks/d4ed95",
+        "sharing": "public",
+        "uri": "https://api.soundcloud.com/tracks/344476016",
+        "secret_token": null,
+        "download_count": 100,
+        "likes_count": 639,
+        "urn": "soundcloud:tracks:344476016",
+        "license": "cc-by-nc-sa",
+        "purchase_title": null,
+        "display_date": "2017-09-28T20:34:42Z",
+        "embeddable_by": "all",
+        "release_date": null,
+        "user_id": 182471112,
+        "monetization_model": "BLACKBOX",
+        "waveform_url": "https://wave.sndcdn.com/UFo5isQR4tXO_m.json",
+        "permalink": "some-like-it-hot",
+        "permalink_url": "https://soundcloud.com/sui_uzi/some-like-it-hot",
+        "user": {
+          "avatar_url": "https://i1.sndcdn.com/avatars-kfS030Jefvt1LkWA-teedoQ-large.jpg",
+          "first_name": "",
+          "full_name": "",
+          "id": 182471112,
+          "kind": "user",
+          "last_modified": "2019-11-03T16:22:01Z",
+          "last_name": "",
+          "permalink": "sui_uzi",
+          "permalink_url": "https://soundcloud.com/sui_uzi",
+          "uri": "https://api.soundcloud.com/users/182471112",
+          "urn": "soundcloud:users:182471112",
+          "username": "SUI UZI",
+          "verified": false,
+          "city": "B O N A F I D E",
+          "country_code": "BZ"
+        },
+        "playback_count": 32383
+      }
+    },
+    {
+      "kind": "like",
+      "created_at": "2020-02-07T22:42:35Z",
+      "track": {
+        "comment_count": 7,
+        "full_duration": 269608,
+        "downloadable": true,
+        "created_at": "2018-01-13T12:57:15Z",
+        "description": "",
+        "media": {
+          "transcodings": [
+            {
+              "url": "https://api-v2.soundcloud.com/media/soundcloud:tracks:382982726/6e3f904a-f416-4c55-b995-fca3c5081da8/stream/hls",
+              "preset": "mp3_0_0",
+              "duration": 269608,
+              "snipped": false,
+              "format": {
+                "protocol": "hls",
+                "mime_type": "audio/mpeg"
+              },
+              "quality": "sq"
+            },
+            {
+              "url": "https://api-v2.soundcloud.com/media/soundcloud:tracks:382982726/6e3f904a-f416-4c55-b995-fca3c5081da8/stream/progressive",
+              "preset": "mp3_0_0",
+              "duration": 269608,
+              "snipped": false,
+              "format": {
+                "protocol": "progressive",
+                "mime_type": "audio/mpeg"
+              },
+              "quality": "sq"
+            },
+            {
+              "url": "https://api-v2.soundcloud.com/media/soundcloud:tracks:382982726/8156fd05-59c0-48be-8a2a-5e4104381cf4/stream/hls",
+              "preset": "opus_0_0",
+              "duration": 269608,
+              "snipped": false,
+              "format": {
+                "protocol": "hls",
+                "mime_type": "audio/ogg; codecs=\"opus\""
+              },
+              "quality": "sq"
+            }
+          ]
+        },
+        "title": "👼💖𝓐𝓷𝓰𝓮𝓵 𝓸𝓯 𝓛𝓸𝓿𝓮💖👼",
+        "publisher_metadata": {
+          "urn": "soundcloud:tracks:382982726",
+          "id": 382982726
+        },
+        "duration": 269608,
+        "has_downloads_left": true,
+        "artwork_url": "https://i1.sndcdn.com/artworks-000284618804-76kngl-large.jpg",
+        "public": true,
+        "streamable": true,
+        "tag_list": "",
+        "download_url": "https://api.soundcloud.com/tracks/382982726/download",
+        "genre": "FUTUREFUNK",
+        "id": 382982726,
+        "reposts_count": 21,
+        "state": "finished",
+        "label_name": null,
+        "last_modified": "2018-04-06T15:29:33Z",
+        "commentable": true,
+        "policy": "ALLOW",
+        "visuals": null,
+        "kind": "track",
+        "purchase_url": null,
+        "sharing": "public",
+        "uri": "https://api.soundcloud.com/tracks/382982726",
+        "secret_token": null,
+        "download_count": 24,
+        "likes_count": 211,
+        "urn": "soundcloud:tracks:382982726",
+        "license": "all-rights-reserved",
+        "purchase_title": null,
+        "display_date": "2018-01-13T12:57:15Z",
+        "embeddable_by": "all",
+        "release_date": null,
+        "user_id": 199696986,
+        "monetization_model": "NOT_APPLICABLE",
+        "waveform_url": "https://wave.sndcdn.com/GsV1plZFJFmH_m.json",
+        "permalink": "untitled-futurefunk",
+        "permalink_url": "https://soundcloud.com/earl-shon/untitled-futurefunk",
+        "user": {
+          "avatar_url": "https://i1.sndcdn.com/avatars-KydUTtgH4zaPx33N-jvn54Q-large.jpg",
+          "first_name": "Son",
+          "full_name": "Son MinWoo",
+          "id": 199696986,
+          "kind": "user",
+          "last_modified": "2019-12-15T10:54:11Z",
+          "last_name": "MinWoo",
+          "permalink": "earl-shon",
+          "permalink_url": "https://soundcloud.com/earl-shon",
+          "uri": "https://api.soundcloud.com/users/199696986",
+          "urn": "soundcloud:users:199696986",
+          "username": "🍄버TRUFFLE섯🍄",
+          "verified": false,
+          "city": "Mush-Rooom???",
+          "country_code": "KR"
+        },
+        "playback_count": 9653
+      }
+    },
+    {
+      "kind": "like",
+      "created_at": "2020-02-07T22:39:30Z",
+      "track": {
+        "comment_count": 13,
+        "full_duration": 183527,
+        "downloadable": false,
+        "created_at": "2018-02-04T14:57:03Z",
+        "description": "Last track from Sunset on soudcloud. New song very soon!",
+        "media": {
+          "transcodings": [
+            {
+              "url": "https://api-v2.soundcloud.com/media/soundcloud:tracks:394347690/ca2f1542-c2eb-4e8a-a2d3-64885aeeeb55/stream/hls",
+              "preset": "mp3_0_0",
+              "duration": 183527,
+              "snipped": false,
+              "format": {
+                "protocol": "hls",
+                "mime_type": "audio/mpeg"
+              },
+              "quality": "sq"
+            },
+            {
+              "url": "https://api-v2.soundcloud.com/media/soundcloud:tracks:394347690/ca2f1542-c2eb-4e8a-a2d3-64885aeeeb55/stream/progressive",
+              "preset": "mp3_0_0",
+              "duration": 183527,
+              "snipped": false,
+              "format": {
+                "protocol": "progressive",
+                "mime_type": "audio/mpeg"
+              },
+              "quality": "sq"
+            },
+            {
+              "url": "https://api-v2.soundcloud.com/media/soundcloud:tracks:394347690/6b2e65c3-5491-4f7c-b9b9-59455e641c6b/stream/hls",
+              "preset": "opus_0_0",
+              "duration": 183527,
+              "snipped": false,
+              "format": {
+                "protocol": "hls",
+                "mime_type": "audio/ogg; codecs=\"opus\""
+              },
+              "quality": "sq"
+            }
+          ]
+        },
+        "title": "Summer Daylight",
+        "publisher_metadata": {
+          "urn": "soundcloud:tracks:394347690",
+          "artist": "Dokutā Slump",
+          "id": 394347690,
+          "album_title": "Sunset"
+        },
+        "duration": 183527,
+        "has_downloads_left": true,
+        "artwork_url": "https://i1.sndcdn.com/artworks-000297224004-79ceef-large.jpg",
+        "public": true,
+        "streamable": true,
+        "tag_list": "Sailorwave Vaporwave",
+        "download_url": null,
+        "genre": "Future Funk",
+        "id": 394347690,
+        "reposts_count": 52,
+        "state": "finished",
+        "label_name": null,
+        "last_modified": "2019-03-20T23:29:25Z",
+        "commentable": true,
+        "policy": "MONETIZE",
+        "visuals": null,
+        "kind": "track",
+        "purchase_url": "https://dokutaslump.bandcamp.com/releases",
+        "sharing": "public",
+        "uri": "https://api.soundcloud.com/tracks/394347690",
+        "secret_token": null,
+        "download_count": 0,
+        "likes_count": 663,
+        "urn": "soundcloud:tracks:394347690",
+        "license": "all-rights-reserved",
+        "purchase_title": null,
+        "display_date": "2018-02-04T14:57:03Z",
+        "embeddable_by": "all",
+        "release_date": null,
+        "user_id": 9785820,
+        "monetization_model": "BLACKBOX",
+        "waveform_url": "https://wave.sndcdn.com/rg5R0XPFArzl_m.json",
+        "permalink": "summer-daylight",
+        "permalink_url": "https://soundcloud.com/dr_slump/summer-daylight",
+        "user": {
+          "avatar_url": "https://i1.sndcdn.com/avatars-000284068942-nvzqzv-large.jpg",
+          "first_name": "",
+          "full_name": "",
+          "id": 9785820,
+          "kind": "user",
+          "last_modified": "2018-07-29T23:55:57Z",
+          "last_name": "",
+          "permalink": "dr_slump",
+          "permalink_url": "https://soundcloud.com/dr_slump",
+          "uri": "https://api.soundcloud.com/users/9785820",
+          "urn": "soundcloud:users:9785820",
+          "username": "Dokutā Slump",
+          "verified": false,
+          "city": "Penguin Village",
+          "country_code": null
+        },
+        "playback_count": 27529
+      }
+    },
+    {
+      "kind": "like",
+      "created_at": "2020-02-07T22:32:25Z",
+      "track": {
+        "comment_count": 30,
+        "full_duration": 285675,
+        "downloadable": false,
+        "created_at": "2018-03-27T22:04:22Z",
+        "description": "https://fmnational.bandcamp.com/track/keep-me-up\n\nJesse Cassettes\nhttps://www.youtube.com/watch?v=WzRkMyFb1p0&t\n\nHshmt Akira\nhttps://www.youtube.com/watch?v=b60K8QYWlCg\n\nHideika\nhttps://www.youtube.com/watch?v=Yx_5okQYx60\n\nhttps://twitter.com/FM_NATIONAL_\n\nSample = Micheal Fortunati - give me up",
+        "media": {
+          "transcodings": [
+            {
+              "url": "https://api-v2.soundcloud.com/media/soundcloud:tracks:421041045/56b41f77-89b1-4369-919a-96c2a6ff8a95/stream/hls",
+              "preset": "mp3_0_0",
+              "duration": 285675,
+              "snipped": false,
+              "format": {
+                "protocol": "hls",
+                "mime_type": "audio/mpeg"
+              },
+              "quality": "sq"
+            },
+            {
+              "url": "https://api-v2.soundcloud.com/media/soundcloud:tracks:421041045/56b41f77-89b1-4369-919a-96c2a6ff8a95/stream/progressive",
+              "preset": "mp3_0_0",
+              "duration": 285675,
+              "snipped": false,
+              "format": {
+                "protocol": "progressive",
+                "mime_type": "audio/mpeg"
+              },
+              "quality": "sq"
+            },
+            {
+              "url": "https://api-v2.soundcloud.com/media/soundcloud:tracks:421041045/2b4821fd-b58a-4287-8142-b9182eff7553/stream/hls",
+              "preset": "opus_0_0",
+              "duration": 285675,
+              "snipped": false,
+              "format": {
+                "protocol": "hls",
+                "mime_type": "audio/ogg; codecs=\"opus\""
+              },
+              "quality": "sq"
+            }
+          ]
+        },
+        "title": "Keep me up // ついていく",
+        "publisher_metadata": {
+          "urn": "soundcloud:tracks:421041045",
+          "contains_music": true,
+          "artist": "NATIONAL ナショナル",
+          "isrc": "QZFP51801898",
+          "id": 421041045
+        },
+        "duration": 285675,
+        "has_downloads_left": true,
+        "artwork_url": "https://i1.sndcdn.com/artworks-000326240271-ruiy9y-large.jpg",
+        "public": true,
+        "streamable": true,
+        "tag_list": "Vapor Funk vaporwave Malaysia aesthetics",
+        "download_url": null,
+        "genre": "Future Funk",
+        "id": 421041045,
+        "reposts_count": 84,
+        "state": "finished",
+        "label_name": null,
+        "last_modified": "2018-12-13T03:19:16Z",
+        "commentable": true,
+        "policy": "ALLOW",
+        "visuals": null,
+        "kind": "track",
+        "purchase_url": "https://fmnational.bandcamp.com/track/keep-me-up",
+        "sharing": "public",
+        "uri": "https://api.soundcloud.com/tracks/421041045",
+        "secret_token": null,
+        "download_count": 0,
+        "likes_count": 1102,
+        "urn": "soundcloud:tracks:421041045",
+        "license": "cc-by-nc-sa",
+        "purchase_title": null,
+        "display_date": "2018-03-27T22:04:22Z",
+        "embeddable_by": "all",
+        "release_date": "2018-03-28T00:00:00Z",
+        "user_id": 257278645,
+        "monetization_model": "NOT_APPLICABLE",
+        "waveform_url": "https://wave.sndcdn.com/rwiarMqrgciR_m.json",
+        "permalink": "keep-me-up",
+        "permalink_url": "https://soundcloud.com/fmnational/keep-me-up",
+        "user": {
+          "avatar_url": "https://i1.sndcdn.com/avatars-000537252171-hj33tp-large.jpg",
+          "first_name": "",
+          "full_name": "",
+          "id": 257278645,
+          "kind": "user",
+          "last_modified": "2019-08-10T14:18:50Z",
+          "last_name": "",
+          "permalink": "fmnational",
+          "permalink_url": "https://soundcloud.com/fmnational",
+          "uri": "https://api.soundcloud.com/users/257278645",
+          "urn": "soundcloud:users:257278645",
+          "username": "NATIONAL ナショナル",
+          "verified": false,
+          "city": "Kuala Lumpur /// クアラルンプール",
+          "country_code": "MY"
+        },
+        "playback_count": 49235
+      }
+    },
+    {
+      "kind": "like",
+      "created_at": "2020-02-07T22:23:35Z",
+      "track": {
+        "comment_count": 9,
+        "full_duration": 186897,
+        "downloadable": false,
+        "created_at": "2018-07-31T21:09:05Z",
+        "description": "I'm very proud to release this new track from my album \"Flavours\"!\nLove you good people.\n\n✨Follow me on Spotify!\nopen.spotify.com/artist/7Emv7WrAiyGM2aqa9Lm0QN\n✨Twitter!\nhttps://twitter.com/sparkly_nite",
+        "media": {
+          "transcodings": [
+            {
+              "url": "https://api-v2.soundcloud.com/media/soundcloud:tracks:479380686/fbe23b0a-6622-4796-a743-c01dc364a296/stream/hls",
+              "preset": "mp3_0_0",
+              "duration": 186897,
+              "snipped": false,
+              "format": {
+                "protocol": "hls",
+                "mime_type": "audio/mpeg"
+              },
+              "quality": "sq"
+            },
+            {
+              "url": "https://api-v2.soundcloud.com/media/soundcloud:tracks:479380686/fbe23b0a-6622-4796-a743-c01dc364a296/stream/progressive",
+              "preset": "mp3_0_0",
+              "duration": 186897,
+              "snipped": false,
+              "format": {
+                "protocol": "progressive",
+                "mime_type": "audio/mpeg"
+              },
+              "quality": "sq"
+            },
+            {
+              "url": "https://api-v2.soundcloud.com/media/soundcloud:tracks:479380686/0f7ad46a-7031-4aa8-a6ef-899d79e92738/stream/hls",
+              "preset": "opus_0_0",
+              "duration": 186897,
+              "snipped": false,
+              "format": {
+                "protocol": "hls",
+                "mime_type": "audio/ogg; codecs=\"opus\""
+              },
+              "quality": "sq"
+            }
+          ]
+        },
+        "title": "Sparkly Night × oogimix - Funky Berry!",
+        "publisher_metadata": {
+          "urn": "soundcloud:tracks:479380686",
+          "contains_music": true,
+          "artist": "Sparkly Night",
+          "isrc": "QZDA81805528",
+          "id": 479380686
+        },
+        "duration": 186897,
+        "has_downloads_left": true,
+        "artwork_url": "https://i1.sndcdn.com/artworks-000382244769-mxxlfc-large.jpg",
+        "public": true,
+        "streamable": true,
+        "tag_list": "\"french house\" \"nu disco\" vaporwave house electronic Edm Dance jpop 80s",
+        "download_url": null,
+        "genre": "Future Funk",
+        "id": 479380686,
+        "reposts_count": 37,
+        "state": "finished",
+        "label_name": null,
+        "last_modified": "2020-02-19T15:06:39Z",
+        "commentable": true,
+        "policy": "MONETIZE",
+        "visuals": null,
+        "kind": "track",
+        "purchase_url": "https://sparklynight.bandcamp.com/album/flavours",
+        "sharing": "public",
+        "uri": "https://api.soundcloud.com/tracks/479380686",
+        "secret_token": null,
+        "download_count": 0,
+        "likes_count": 410,
+        "urn": "soundcloud:tracks:479380686",
+        "license": "all-rights-reserved",
+        "purchase_title": "Buy Now",
+        "display_date": "2018-07-31T21:09:05Z",
+        "embeddable_by": "all",
+        "release_date": null,
+        "user_id": 111196785,
+        "monetization_model": "AD_SUPPORTED",
+        "waveform_url": "https://wave.sndcdn.com/z27Lsv0DtzLf_m.json",
+        "permalink": "sparkly-night-oogimix-funky-berry",
+        "permalink_url": "https://soundcloud.com/sparkly_night/sparkly-night-oogimix-funky-berry",
+        "user": {
+          "avatar_url": "https://i1.sndcdn.com/avatars-000754988653-bfhze4-large.jpg",
+          "first_name": "",
+          "full_name": "",
+          "id": 111196785,
+          "kind": "user",
+          "last_modified": "2020-02-18T16:09:11Z",
+          "last_name": "",
+          "permalink": "sparkly_night",
+          "permalink_url": "https://soundcloud.com/sparkly_night",
+          "uri": "https://api.soundcloud.com/users/111196785",
+          "urn": "soundcloud:users:111196785",
+          "username": "Sparkly Night",
+          "verified": false,
+          "city": "Warsaw",
+          "country_code": null
+        },
+        "playback_count": 16409
+      }
+    },
+    {
+      "kind": "like",
+      "created_at": "2020-02-07T19:57:33Z",
+      "track": {
+        "comment_count": 16,
+        "full_duration": 267649,
+        "downloadable": false,
+        "created_at": "2017-08-07T15:26:53Z",
+        "description": "",
+        "media": {
+          "transcodings": [
+            {
+              "url": "https://api-v2.soundcloud.com/media/soundcloud:tracks:336845647/921d7efb-2fc4-463b-872b-a885895684fc/stream/hls",
+              "preset": "mp3_0_0",
+              "duration": 267649,
+              "snipped": false,
+              "format": {
+                "protocol": "hls",
+                "mime_type": "audio/mpeg"
+              },
+              "quality": "sq"
+            },
+            {
+              "url": "https://api-v2.soundcloud.com/media/soundcloud:tracks:336845647/921d7efb-2fc4-463b-872b-a885895684fc/stream/progressive",
+              "preset": "mp3_0_0",
+              "duration": 267649,
+              "snipped": false,
+              "format": {
+                "protocol": "progressive",
+                "mime_type": "audio/mpeg"
+              },
+              "quality": "sq"
+            },
+            {
+              "url": "https://api-v2.soundcloud.com/media/soundcloud:tracks:336845647/040a39de-bf09-4a71-b3cc-0561451a8746/stream/hls",
+              "preset": "opus_0_0",
+              "duration": 267649,
+              "snipped": false,
+              "format": {
+                "protocol": "hls",
+                "mime_type": "audio/ogg; codecs=\"opus\""
+              },
+              "quality": "sq"
+            }
+          ]
+        },
+        "title": "Only You Know",
+        "publisher_metadata": {
+          "urn": "soundcloud:tracks:336845647",
+          "id": 336845647
+        },
+        "duration": 267649,
+        "has_downloads_left": true,
+        "artwork_url": "https://i1.sndcdn.com/artworks-000237342201-bpn58v-large.jpg",
+        "public": true,
+        "streamable": true,
+        "tag_list": "\"future funk\" japanese Pop 80 jpop Beautiful \"city pop\"",
+        "download_url": null,
+        "genre": "Future Funk Forever",
+        "id": 336845647,
+        "reposts_count": 35,
+        "state": "finished",
+        "label_name": null,
+        "last_modified": "2019-04-04T15:48:38Z",
+        "commentable": true,
+        "policy": "MONETIZE",
+        "visuals": null,
+        "kind": "track",
+        "purchase_url": "https://suiuzi.bandcamp.com/album/night-songs-pt-1",
+        "sharing": "public",
+        "uri": "https://api.soundcloud.com/tracks/336845647",
+        "secret_token": null,
+        "download_count": 0,
+        "likes_count": 423,
+        "urn": "soundcloud:tracks:336845647",
+        "license": "cc-by-nc-sa",
+        "purchase_title": null,
+        "display_date": "2017-08-07T15:26:53Z",
+        "embeddable_by": "all",
+        "release_date": null,
+        "user_id": 182471112,
+        "monetization_model": "BLACKBOX",
+        "waveform_url": "https://wave.sndcdn.com/z19allZfZxD3_m.json",
+        "permalink": "only-you-know",
+        "permalink_url": "https://soundcloud.com/sui_uzi/only-you-know",
+        "user": {
+          "avatar_url": "https://i1.sndcdn.com/avatars-kfS030Jefvt1LkWA-teedoQ-large.jpg",
+          "first_name": "",
+          "full_name": "",
+          "id": 182471112,
+          "kind": "user",
+          "last_modified": "2019-11-03T16:22:01Z",
+          "last_name": "",
+          "permalink": "sui_uzi",
+          "permalink_url": "https://soundcloud.com/sui_uzi",
+          "uri": "https://api.soundcloud.com/users/182471112",
+          "urn": "soundcloud:users:182471112",
+          "username": "SUI UZI",
+          "verified": false,
+          "city": "B O N A F I D E",
+          "country_code": "BZ"
+        },
+        "playback_count": 19076
+      }
+    },
+    {
+      "kind": "like",
+      "created_at": "2020-02-07T03:18:49Z",
+      "track": {
+        "comment_count": 15,
+        "full_duration": 326873,
+        "downloadable": false,
+        "created_at": "2018-06-19T02:31:16Z",
+        "description": "Fun and dancy house track from the EP~\nEnjoy!",
+        "media": {
+          "transcodings": [
+            {
+              "url": "https://api-v2.soundcloud.com/media/soundcloud:tracks:460248378/831ce38e-1b63-4fb0-96f8-74f7b835f0e8/stream/hls",
+              "preset": "mp3_0_0",
+              "duration": 326873,
+              "snipped": false,
+              "format": {
+                "protocol": "hls",
+                "mime_type": "audio/mpeg"
+              },
+              "quality": "sq"
+            },
+            {
+              "url": "https://api-v2.soundcloud.com/media/soundcloud:tracks:460248378/831ce38e-1b63-4fb0-96f8-74f7b835f0e8/stream/progressive",
+              "preset": "mp3_0_0",
+              "duration": 326873,
+              "snipped": false,
+              "format": {
+                "protocol": "progressive",
+                "mime_type": "audio/mpeg"
+              },
+              "quality": "sq"
+            },
+            {
+              "url": "https://api-v2.soundcloud.com/media/soundcloud:tracks:460248378/aa394826-2430-4bf4-81f7-bb66a5c8b75a/stream/hls",
+              "preset": "opus_0_0",
+              "duration": 326873,
+              "snipped": false,
+              "format": {
+                "protocol": "hls",
+                "mime_type": "audio/ogg; codecs=\"opus\""
+              },
+              "quality": "sq"
+            }
+          ]
+        },
+        "title": "Moonlight Dream Night 🌙",
+        "publisher_metadata": {
+          "urn": "soundcloud:tracks:460248378",
+          "explicit": false,
+          "contains_music": true,
+          "artist": "クリスタルKITSUNE",
+          "isrc": "QM8DG1884918",
+          "id": 460248378,
+          "album_title": "Beach Babes & Vapor Waves"
+        },
+        "duration": 326873,
+        "has_downloads_left": true,
+        "artwork_url": "https://i1.sndcdn.com/artworks-000385244385-fj5lc9-large.jpg",
+        "public": true,
+        "streamable": true,
+        "tag_list": "House Disco K-Pop Upbeat KITSUNE Kawaii Cute EDM Chopped Plunderphonics",
+        "download_url": null,
+        "genre": "Future Funk",
+        "id": 460248378,
+        "reposts_count": 49,
+        "state": "finished",
+        "label_name": null,
+        "last_modified": "2019-10-16T18:57:47Z",
+        "commentable": true,
+        "policy": "MONETIZE",
+        "visuals": null,
+        "kind": "track",
+        "purchase_url": null,
+        "sharing": "public",
+        "uri": "https://api.soundcloud.com/tracks/460248378",
+        "secret_token": null,
+        "download_count": 0,
+        "likes_count": 564,
+        "urn": "soundcloud:tracks:460248378",
+        "license": "cc-by-nc-sa",
+        "purchase_title": null,
+        "display_date": "2018-06-29T21:02:18Z",
+        "embeddable_by": "all",
+        "release_date": null,
+        "user_id": 108717801,
+        "monetization_model": "AD_SUPPORTED",
+        "waveform_url": "https://wave.sndcdn.com/8a9820KX3yzD_m.json",
+        "permalink": "moonlight-dream-night",
+        "permalink_url": "https://soundcloud.com/kurisutarukitsune/moonlight-dream-night",
+        "user": {
+          "avatar_url": "https://i1.sndcdn.com/avatars-000756075124-05d7w7-large.jpg",
+          "first_name": "Crystal",
+          "full_name": "Crystal Kitsune",
+          "id": 108717801,
+          "kind": "user",
+          "last_modified": "2020-01-14T18:15:19Z",
+          "last_name": "Kitsune",
+          "permalink": "kurisutarukitsune",
+          "permalink_url": "https://soundcloud.com/kurisutarukitsune",
+          "uri": "https://api.soundcloud.com/users/108717801",
+          "urn": "soundcloud:users:108717801",
+          "username": "💎 クリスタルKITSUNE 🦊",
+          "verified": false,
+          "city": "NEO-ORLEANS2077",
+          "country_code": "US"
+        },
+        "playback_count": 22766
+      }
+    }
+  ],
+  "next_href": "https://api-v2.soundcloud.com/users/269568808/track_likes?offset=1581045529733452&limit=10",
+  "query_urn": null
+}

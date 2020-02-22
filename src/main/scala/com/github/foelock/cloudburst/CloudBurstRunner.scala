@@ -1,5 +1,8 @@
 package com.github.foelock.cloudburst
 
+import com.github.foelock.cloudburst.api.SoundCloudConstants
+import scalaj.http.Http
+
 object CloudBurstRunner extends App {
   val userDirectory = sys.props.get("user.home").getOrElse(".")
 
@@ -15,10 +18,15 @@ object CloudBurstRunner extends App {
 //  val result = apiClient.getTrackByUrl("https://soundcloud.com/topazeclub/city-night-shadows")
 //  apiClient.downloadTrack(result.get)
 
-  val userResult = apiClient.getUserById(269568808)
+  val userId = 269568808
 
+  val userLikeTracks = apiClient.getUserLikesById(userId)
+
+  userLikeTracks.foreach { track =>
+    apiClient.downloadTrack(track)
+    Thread.sleep(SoundCloudConstants.API_DOWNLOAD_DELAY_MS)
+  }
 //  println(JsonUtil.toJson(result, true))
-
 
   wiring.programLocalStorageService.shutdown()
 

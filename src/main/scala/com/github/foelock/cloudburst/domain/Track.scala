@@ -1,5 +1,6 @@
 package com.github.foelock.cloudburst.domain
 
+import com.github.foelock.cloudburst.util.DateParser
 import io.circe.derivation.{deriveDecoder, deriveEncoder}
 import io.circe.{Decoder, Encoder}
 
@@ -53,8 +54,16 @@ object Media {
 
 case class Track(
   media: Media,
-  title: String
-)
+  title: String,
+  user: User,
+  created_at: String, //2018-11-06T15:53:08Z
+  genre: String,
+  artwork_url: String,
+  description: String,
+  permalink_url: String
+) {
+  val createdAt = DateParser.parseIsoString(created_at)
+}
 
 object Track {
   implicit val encoder: Encoder[Track] = deriveEncoder

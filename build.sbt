@@ -6,6 +6,8 @@ ThisBuild / name := "cloudburst"
 
 libraryDependencies +=  "org.scalaj" %% "scalaj-http" % "2.4.2"
 
+libraryDependencies += "com.mpatric" % "mp3agic" % "0.9.1"
+
 libraryDependencies ++= Seq(
   "io.circe" %% "circe-core",
   "io.circe" %% "circe-parser",
