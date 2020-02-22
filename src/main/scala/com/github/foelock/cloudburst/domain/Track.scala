@@ -1,5 +1,7 @@
 package com.github.foelock.cloudburst.domain
 
+import java.time.LocalDateTime
+
 import com.github.foelock.cloudburst.util.DateParser
 import io.circe.derivation.{deriveDecoder, deriveEncoder}
 import io.circe.{Decoder, Encoder}
@@ -8,7 +10,7 @@ case class Format(
   protocol: String,
   mime_type: String
 ) {
-  val fileExt = mime_type match {
+  val fileExt: String = mime_type match {
     case Format.OPUS => "opus"
     case Format.MP3 => "mp3"
     case x => throw new RuntimeException(s"unknown format: $x")
@@ -57,12 +59,11 @@ case class Track(
   title: String,
   user: User,
   created_at: String, //2018-11-06T15:53:08Z
-  genre: String,
-  artwork_url: String,
-  description: String,
+  genre: Option[String],
+  artwork_url: Option[String],
   permalink_url: String
 ) {
-  val createdAt = DateParser.parseIsoString(created_at)
+  val createdAt: LocalDateTime = DateParser.parseIsoString(created_at)
 }
 
 object Track {

@@ -9,6 +9,11 @@ libraryDependencies +=  "org.scalaj" %% "scalaj-http" % "2.4.2"
 libraryDependencies += "com.mpatric" % "mp3agic" % "0.9.1"
 
 libraryDependencies ++= Seq(
+  "com.typesafe.scala-logging" %% "scala-logging" % "3.9.2",
+  "ch.qos.logback" % "logback-classic" % "1.2.3"
+)
+
+libraryDependencies ++= Seq(
   "io.circe" %% "circe-core",
   "io.circe" %% "circe-parser",
   "io.circe" %% "circe-derivation"
