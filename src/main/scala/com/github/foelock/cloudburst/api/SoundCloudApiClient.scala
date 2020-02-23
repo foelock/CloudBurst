@@ -113,6 +113,7 @@ class SoundCloudApiClient(
   }
 
   def downloadTrack(track: Track): Unit = {
+    logger.info(s"[START] Download: ${track.title}")
     for {
       transcoding <- track.media.getTranscoding
       fileExt = transcoding.format.fileExt
@@ -125,6 +126,7 @@ class SoundCloudApiClient(
     } yield {
       _downloadTrack(downloadUrl.url, track, transcoding, downloadTarget)
     }
+    logger.info(s"[END] Download: ${track.title}")
   }
 
   private def _downloadTrack(url: String, track: Track, transcoding: Transcoding, downloadTarget: Path): Unit = {
@@ -136,17 +138,17 @@ class SoundCloudApiClient(
     val wasWritten = try {
       dlStream = Some(new URL(url).openStream())
       rbc = Some(Channels.newChannel(dlStream.get))
-      logger.info(s"downloading to ${dlFile.getAbsolutePath}")
+      logger.info(s"Downloading to file: ${dlFile.getAbsolutePath}")
       fos = Some(new FileOutputStream(dlFile))
       fos.get.getChannel.transferFrom(rbc.get, 0, Long.MaxValue)
-      logger.info(s"successfully downloaded ${dlFile.getAbsolutePath} ")
+      logger.info(s"Download success: ${dlFile.getAbsolutePath} ")
       true
     } catch {
       case _: FileAlreadyExistsException =>
-        logger.info("file already exists. skipping")
+        logger.info(s"${dlFile.getAbsolutePath} already exists. skipping")
         true
       case exception: Exception =>
-        logger.error(s"error downloading ${track.title}: $exception")
+        logger.error(s"Error downloading ${track.title}", exception)
         false
     } finally {
       fos.foreach(_.close())
@@ -160,6 +162,7 @@ class SoundCloudApiClient(
   }
 
   private def setId3V2Tags(file: File, track: Track): Unit = {
+    logger.info(s"Tagging: ${file.getAbsolutePath}")
     val stagingFilePath = downloadPath.resolve(s".tmp_${file.getName}")
     Files.copy(file.toPath, stagingFilePath)
 
@@ -176,7 +179,7 @@ class SoundCloudApiClient(
     track.genre.foreach(tag.setGenreDescription)
 
     track.artwork_url.foreach { artworkUrl =>
-      logger.info(s"downloading album artwork: $artworkUrl")
+      logger.info(s"Fetching album artwork: $artworkUrl")
       val albumImageResponse = apiGetBytes(Http(artworkUrl))
       val mimeType = albumImageResponse.contentType.getOrElse("image/jpeg")
       val albumImage = albumImageResponse.body
@@ -189,6 +192,8 @@ class SoundCloudApiClient(
     mp3File.save(file.getAbsolutePath)
 
     Files.delete(stagingFilePath)
+
+    logger.info(s"Finished tagging: ${file.getAbsolutePath}")
   }
 
   private def parseResponse[T](response: HttpResponse[String])(implicit decoder: Decoder[T]): Option[T] = {
@@ -209,12 +214,14 @@ class SoundCloudApiClient(
 
   private def apiGet(request: HttpRequest): HttpResponse[String] = {
     val response = request.asString
+    logger.info(s"In quiet mode for ${API_CALL_DELAY_MS}ms")
     Thread.sleep(API_CALL_DELAY_MS)
     response
   }
 
   private def apiGetBytes(request: HttpRequest): HttpResponse[Array[Byte]] = {
     val response = request.asBytes
+    logger.info(s"In quiet mode for ${API_CALL_DELAY_MS}ms")
     Thread.sleep(API_CALL_DELAY_MS)
     response
   }
