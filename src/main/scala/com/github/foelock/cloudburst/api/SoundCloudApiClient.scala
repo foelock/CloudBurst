@@ -92,16 +92,29 @@ class SoundCloudApiClient(
   }
 
   def getUserLikesById(userId: Long): Seq[Track] = {
-    val initialRequest = apiGet(apiRequestFor(s"users/$userId/track_likes", queryParams = Map("limit" -> "199")))
+    val initialResponse = apiGet(
+      apiRequestFor(
+        urlOrPath = s"users/$userId/track_likes",
+        queryParams = Map(
+          "limit" -> "24",
+          "offset" -> "0",
+          "linked_partitioning" -> "1",
+          "app_locale" -> "en"
+        )
+      ),
+      5000
+    )
 
-    var currentTrackCollection = parseResponse[TrackCollection](initialRequest)
+    var currentTrackCollection = parseResponse[TrackCollection](initialResponse)
     var tracks = Seq.empty[Track]
     while (currentTrackCollection.exists(_.next_href.isDefined)) {
       val current = currentTrackCollection.get
       tracks ++= current.collection.map(_.track)
 
-      currentTrackCollection = parseResponse[TrackCollection](apiGet(apiRequestFor(current.next_href.get)))
+      currentTrackCollection = parseResponse[TrackCollection](apiGet(apiRequestFor(current.next_href.get), 5000))
     }
+
+    logger.info(s"Found ${tracks.size} liked tracks")
 
     tracks.map(sanitizeTrackTitle)
   }
@@ -212,10 +225,10 @@ class SoundCloudApiClient(
     )
   }
 
-  private def apiGet(request: HttpRequest): HttpResponse[String] = {
+  private def apiGet(request: HttpRequest, apiDelayMs: Long = API_CALL_DELAY_MS): HttpResponse[String] = {
     val response = request.asString
-    logger.info(s"In quiet mode for ${API_CALL_DELAY_MS}ms")
-    Thread.sleep(API_CALL_DELAY_MS)
+    logger.info(s"In quiet mode for ${apiDelayMs}ms")
+    Thread.sleep(apiDelayMs)
     response
   }
 
