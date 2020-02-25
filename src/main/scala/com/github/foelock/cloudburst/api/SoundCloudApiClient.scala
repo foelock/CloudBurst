@@ -192,8 +192,19 @@ class SoundCloudApiClient(
     track.genre.foreach(tag.setGenreDescription)
 
     track.artwork_url.foreach { artworkUrl =>
-      logger.info(s"Fetching album artwork: $artworkUrl")
-      val albumImageResponse = apiGetBytes(Http(artworkUrl))
+      val hqUrl = artworkUrl.replace("large", "t500x500")
+      val hqImageResponse = apiGetBytes(Http(hqUrl))
+
+      val albumImageResponse =
+        if (hqImageResponse.code == 200) {
+          logger.info(s"Found HQ album artwork: $hqUrl")
+          hqImageResponse
+        }
+        else {
+          logger.info(s"No HQ album artwork, falling back to: $artworkUrl")
+          apiGetBytes(Http(hqUrl))
+        }
+
       val mimeType = albumImageResponse.contentType.getOrElse("image/jpeg")
       val albumImage = albumImageResponse.body
       tag.setAlbumImage(albumImage, mimeType)

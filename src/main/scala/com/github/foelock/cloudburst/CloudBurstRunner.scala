@@ -1,8 +1,9 @@
 package com.github.foelock.cloudburst
 
 import com.github.foelock.cloudburst.api.SoundCloudConstants
+import com.typesafe.scalalogging.LazyLogging
 
-object CloudBurstRunner extends App {
+object CloudBurstRunner extends App with LazyLogging {
 
   val userDirectory = sys.props.get("user.home").getOrElse(".")
 
@@ -15,14 +16,19 @@ object CloudBurstRunner extends App {
 
   //  val result = apiClient.getTrackById()
   //  val result = apiClient.getTrackByUrl("https://soundcloud.com/plexitofer/cupid-groove")
-  //  val result = apiClient.getTrackByUrl("https://soundcloud.com/topazeclub/city-night-shadows")
-  //  apiClient.downloadTrack(result.get)
+//    val result = apiClient.getTrackByUrl("https://soundcloud.com/skibblez/sky-romance")
+//    apiClient.downloadTrack(result.get)
 
   val userId = 269568808
 
   val userLikeTracks = apiClient.getUserLikesById(userId)
 
-  userLikeTracks.foreach(apiClient.downloadTrack)
+  val totalTracks = userLikeTracks.size
+
+  userLikeTracks.zipWithIndex.foreach { case (track, ndx) =>
+    logger.info(s"Processing track $ndx of $totalTracks")
+    apiClient.downloadTrack(track)
+  }
   //  println(JsonUtil.toJson(result, true))
 
   wiring.programLocalStorageService.shutdown()
