@@ -1,8 +1,8 @@
-package com.github.foelock.cloudburst.domain
+package com.mattbague.cloudburst.domain
 
 import java.time.LocalDateTime
 
-import com.github.foelock.cloudburst.util.DateParser
+import com.mattbague.cloudburst.util.DateParser
 import io.circe.derivation.{deriveDecoder, deriveEncoder}
 import io.circe.{Decoder, Encoder}
 

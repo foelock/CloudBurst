@@ -1,6 +1,6 @@
-package com.github.foelock.cloudburst
+package com.mattbague.cloudburst
 
-import com.github.foelock.cloudburst.api.SoundCloudConstants
+import com.mattbague.cloudburst.api.SoundCloudConstants
 import com.typesafe.scalalogging.LazyLogging
 
 object CloudBurstRunner extends App with LazyLogging {

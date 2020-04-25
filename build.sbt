@@ -1,4 +1,4 @@
-ThisBuild / organization := "com.github.foelock"
+ThisBuild / organization := "com.mattbague"
 ThisBuild / scalaVersion := "2.12.8"
 ThisBuild / version := "1.0-SNAPSHOT"
 ThisBuild / name := "cloudburst"

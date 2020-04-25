@@ -1,13 +1,13 @@
-package com.github.foelock.cloudburst.api
+package com.mattbague.cloudburst.api
 
 import java.io.{File, FileOutputStream, InputStream}
 import java.net.URL
 import java.nio.channels.{Channels, ReadableByteChannel}
 import java.nio.file.{FileAlreadyExistsException, Files, Path, Paths}
 
-import com.github.foelock.cloudburst.api.SoundCloudConstants._
-import com.github.foelock.cloudburst.domain._
-import com.github.foelock.cloudburst.util.{JsonUtil, ProgramLocalStorageService}
+import com.mattbague.cloudburst.api.SoundCloudConstants._
+import com.mattbague.cloudburst.domain._
+import com.mattbague.cloudburst.util.{JsonUtil, ProgramLocalStorageService}
 import com.mpatric.mp3agic.{ID3v24Tag, Mp3File}
 import com.typesafe.scalalogging.LazyLogging
 import io.circe.Decoder
@@ -34,9 +34,11 @@ class SoundCloudApiClient(
   private def fetchNewClientId(): Option[String] = {
     val response = apiGet(Http(SoundCloudConstants.HOME_PAGE))
 
-    val jsBundleUrls = JsBundleRegex.findAllIn(response.body)
+    val jsBundleUrls = JsBundleRegex.findAllIn(response.body).toSeq.reverse
 
-    jsBundleUrls.map { jsBundleUrl =>
+    logger.info(s"found ${jsBundleUrls.size} js bundles to check")
+
+    jsBundleUrls.toStream.map { jsBundleUrl =>
       logger.info(s"checking $jsBundleUrl...")
       val jsBundle = apiGet(Http(jsBundleUrl)).body
       val maybeClientId = ClientIdRegex.findFirstMatchIn(jsBundle).map(_.group(1))
@@ -45,6 +47,7 @@ class SoundCloudApiClient(
         programLocalStorageService.store(programLocalStorageService.current.copy(clientId = maybeClientId))
         maybeClientId
       } else {
+        logger.info(s"client id not found, checking next js bundle")
         None
       }
     }.find(_.isDefined).flatten
@@ -61,7 +64,7 @@ class SoundCloudApiClient(
   private def instantiateClientId: Option[String] = {
     val localClientId = programLocalStorageService.current.clientId
     val localClientIdWorks = localClientId.exists { cid =>
-      val response = apiGet(Http(s"$API_V1_URL/tracks?client_id=$cid")) // doesn't use apiUrlFor because instantiation reasons
+      val response = apiGet(Http(s"$API_V2_URL/featured_tracks/front?client_id=$cid")) // doesn't use apiUrlFor because instantiation reasons
       response.code == 200
     }
 

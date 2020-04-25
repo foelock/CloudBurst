@@ -1,4 +1,4 @@
-package com.github.foelock.cloudburst.util
+package com.mattbague.cloudburst.util
 
 import java.nio.charset.StandardCharsets
 import java.nio.file.{Files, Paths}

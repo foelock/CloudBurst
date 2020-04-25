@@ -1,4 +1,4 @@
-package com.github.foelock.cloudburst.ui
+package com.mattbague.cloudburst.ui
 
 import scalafx.Includes._
 import scalafx.application.JFXApp

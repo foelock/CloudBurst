@@ -1,7 +1,7 @@
-package com.github.foelock.cloudburst
+package com.mattbague.cloudburst
 
-import com.github.foelock.cloudburst.api.SoundCloudApiClient
-import com.github.foelock.cloudburst.util.ProgramLocalStorageService
+import com.mattbague.cloudburst.api.SoundCloudApiClient
+import com.mattbague.cloudburst.util.ProgramLocalStorageService
 
 class Wiring(baseUserDirectory: String) {
   val programLocalStorageService = new ProgramLocalStorageService(baseUserDirectory)

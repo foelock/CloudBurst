@@ -1,4 +1,4 @@
-package com.github.foelock.cloudburst.util
+package com.mattbague.cloudburst.util
 import java.time.LocalDateTime
 import java.time.format.DateTimeFormatter._
 

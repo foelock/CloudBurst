@@ -1,4 +1,4 @@
-package com.github.foelock.cloudburst.util
+package com.mattbague.cloudburst.util
 
 import io.circe.parser.parse
 import io.circe.{Decoder, Encoder, Printer, _}

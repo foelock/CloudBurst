@@ -1,4 +1,4 @@
-package com.github.foelock.cloudburst.domain
+package com.mattbague.cloudburst.domain
 
 import io.circe.derivation.{deriveDecoder, deriveEncoder}
 import io.circe.{Decoder, Encoder}
