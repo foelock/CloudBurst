@@ -235,7 +235,7 @@ class SoundCloudApiClient(
 
   private def sanitizeTrackTitle(track: Track): Track = {
     track.copy(
-      title = track.title.replaceAll("[\\\\/:*?\"<>|]", "_")
+      title = track.title.replaceAll("[\\\\/:*?\"<>|]", "_").trim
     )
   }
 
