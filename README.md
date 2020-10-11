@@ -1,15 +1,15 @@
 # CloudBurst
 A simple CLI tool to download music from [SoundCloud](https://soundcloud.com).
 
-### Features
+## Features
 - Download track by URL
 - Download all liked tracks for a user
 - Tagged with ID3 metadata (including album art)  
 
-### Requirements
+## Requirements
 - Requires Java 11+ to run
 
-### Example Usage
+## Example Usage
 ```
 # download a specific track
 java -jar cloudburst.jar -t "https://soundcloud.com/plexitofer/cupid-groove"
@@ -18,7 +18,7 @@ java -jar cloudburst.jar -t "https://soundcloud.com/plexitofer/cupid-groove"
 java -jar cloudburst.jar -u 123456 --likes
 ```
 
-### Options
+## Options
 ```
   -d, --downloads  <arg>   Download folder location
   -l, --likes              Download all liked songs. Requires 'user' arg to be
