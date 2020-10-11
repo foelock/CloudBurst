@@ -21,8 +21,8 @@ java -jar cloudburst.jar -u 123456 --likes
 ## Options
 ```
   -d, --downloads  <arg>   Download folder location
-  -l, --likes              Download all liked songs. Requires 'user' arg to be
-                           set at least once previously
+  -l, --likes              Download all liked tracks for a user. Requires 'user' arg to be
+                           set at least once 
   -t, --track  <arg>       Download single track via URL
   -u, --user  <arg>        Soundcloud Account ID. To find this ID, go to your
                            cookies and look at your 'oauth_token'. Example:
