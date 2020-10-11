@@ -9,8 +9,7 @@ object JsonUtil {
   val prettyPrinter: Printer = Printer.spaces2.copy(dropNullValues = true)
 
   def toJson[T](obj: T, pretty: Boolean = false)(implicit encoder: Encoder[T]): String = {
-    if (pretty) encoder(obj).pretty(prettyPrinter) else encoder(obj).pretty(printer)
-
+    if (pretty) encoder(obj).printWith(prettyPrinter) else encoder(obj).printWith(printer)
   }
 
   def fromJson[T](json: String)(implicit decoder: Decoder[T]): T = {

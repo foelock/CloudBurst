@@ -5,6 +5,7 @@ import java.net.URL
 import java.nio.channels.{Channels, ReadableByteChannel}
 import java.nio.file.{FileAlreadyExistsException, Files, Path, Paths}
 
+import com.mattbague.cloudburst.CLICloudBurstRunner.logger
 import com.mattbague.cloudburst.api.SoundCloudConstants._
 import com.mattbague.cloudburst.domain._
 import com.mattbague.cloudburst.util.{JsonUtil, ProgramLocalStorageService}
@@ -20,6 +21,8 @@ class SoundCloudApiClient(
   programLocalStorageService: ProgramLocalStorageService,
   baseDownloadPath: String,
   clientIdOverride: Option[String] = None) extends LazyLogging {
+
+  logger.info(s"Using $baseDownloadPath for downloads")
 
   private lazy val clientId = clientIdOverride.orElse(instantiateClientId).getOrElse(FALLBACK_CLIENT_ID)
 
@@ -38,7 +41,7 @@ class SoundCloudApiClient(
 
     logger.info(s"found ${jsBundleUrls.size} js bundles to check")
 
-    jsBundleUrls.toStream.map { jsBundleUrl =>
+    jsBundleUrls.to(LazyList).map { jsBundleUrl =>
       logger.info(s"checking $jsBundleUrl...")
       val jsBundle = apiGet(Http(jsBundleUrl)).body
       val maybeClientId = ClientIdRegex.findFirstMatchIn(jsBundle).map(_.group(1))
@@ -77,7 +80,7 @@ class SoundCloudApiClient(
     }
   }
 
-  def getTrackById(id: Long = 525671871): Option[Track] = {
+  def getTrackById(id: Long): Option[Track] = {
     val response = apiGet(apiRequestFor(s"tracks/$id"))
     parseResponse[Track](response).map(sanitizeTrackTitle)
   }
@@ -91,7 +94,7 @@ class SoundCloudApiClient(
     val response = apiGet(apiRequestFor(s"users/$id"))
 
     logger.info(response.body)
-    None
+    None //todo: implement me
   }
 
   def getUserLikesById(userId: Long): Seq[Track] = {

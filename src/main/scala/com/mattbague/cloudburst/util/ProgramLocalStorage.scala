@@ -3,6 +3,7 @@ package com.mattbague.cloudburst.util
 import java.nio.charset.StandardCharsets
 import java.nio.file.{Files, Paths}
 
+import com.typesafe.scalalogging.StrictLogging
 import io.circe.derivation.{deriveDecoder, deriveEncoder}
 import io.circe.{Decoder, Encoder}
 
@@ -16,10 +17,13 @@ object ProgramLocalStorage {
   implicit val decoder: Decoder[ProgramLocalStorage] = deriveDecoder
 }
 
-class ProgramLocalStorageService(userDir: String) {
+class ProgramLocalStorageService(userDir: String) extends StrictLogging {
+  private val appConfigDataLocation = s"$userDir/.cloudburst/data.json"
+
+  logger.info(s"Storing app config data in $appConfigDataLocation")
 
   private lazy val localStoragePath = {
-    val path = Paths.get(s"$userDir/.cloudburst/data.json")
+    val path = Paths.get(appConfigDataLocation)
     if (!Files.exists(path)) {
       Files.createDirectories(path.getParent)
       Files.createFile(path)
